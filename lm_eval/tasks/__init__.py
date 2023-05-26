@@ -53,6 +53,12 @@ from . import storycloze
 from . import toxigen
 from . import crowspairs
 
+from . import c3
+from . import iflytek
+from . import tnews
+from . import cluewsc
+from . import gaokaomcq
+
 ########################################
 # Translation tasks
 ########################################
@@ -310,6 +316,11 @@ TASK_REGISTRY = {
     # "storycloze_2016": storycloze.StoryCloze2016,
     # "storycloze_2018": storycloze.StoryCloze2018,
     # "sat": sat.SATAnalogies,
+    "c3": c3.C3,
+    "iflytek": iflytek.Iflytek,
+    "tnews": tnews.Tnews,
+    "cluewsc": cluewsc.ClueWSC,
+    "gaokaomcq": gaokaomcq.GaokaoMCQ,
 }
 
 

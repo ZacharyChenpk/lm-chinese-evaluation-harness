@@ -1,3 +1,25 @@
+# Update
+
+This project is based on the [framework](https://github.com/EleutherAI/lm-evaluation-harness) by EleutherAI. We add five new Chinese Benchmarks:
+
+ - C3 (Chinese reading comprehension, from CLUE)
+ - ClueWSC (Chinese Winograd challenge, from CLUE)
+ - TNews (Chinese short text classification, from CLUE)
+ - IFLYTEK (Chinese long text classification, from CLUE)
+ - [GAOKAO-Bench](https://github.com/OpenLMLab/GAOKAO-Bench) (Multiple-choice questions from Chinese GAOKAO, Chinese, Geology, History and Politics)
+
+To use GAOKAO-Bench, please do the following steps:
+
+1. Download their [repository](https://github.com/OpenLMLab/GAOKAO-Bench)
+2. Copy the script `read_gk_data.py` to `GAOKAO-Bench` and run it
+```
+cp read_gk_data.py ../GAOKAO-Bench/
+cd ../GAOKAO-Bench/
+python3 read_gk_data.py
+```
+3. Change the path of Line 29 in lm_eval/tasks/gaokaomcq.py to the generated `gaokaoMCQs` filefolder.
+Now you can use it with `--tasks gaokaomcq`.
+
 # Language Model Evaluation Harness
 
 ![](https://github.com/EleutherAI/lm-evaluation-harness/workflows/Build/badge.svg)

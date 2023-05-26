@@ -3,3 +3,8 @@ env
 data/
 lm_cache
 .idea
+*writeout*
+iflytek/
+build/
+dist/
+lm_eval/tasks/tnews_multiplechoice.py
