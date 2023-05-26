@@ -1,4 +1,9 @@
-# Update
+# Language Model Evaluation Harness
+
+![](https://github.com/EleutherAI/lm-evaluation-harness/workflows/Build/badge.svg)
+[![codecov](https://codecov.io/gh/EleutherAI/lm-evaluation-harness/branch/master/graph/badge.svg?token=JSG3O2427J)](https://codecov.io/gh/EleutherAI/lm-evaluation-harness)
+
+## Update
 
 This project is based on the [framework](https://github.com/EleutherAI/lm-evaluation-harness) by EleutherAI. We add five new Chinese Benchmarks:
 
@@ -19,11 +24,6 @@ python3 read_gk_data.py
 ```
 3. Change the path of Line 29 in lm_eval/tasks/gaokaomcq.py to the generated `gaokaoMCQs` filefolder.
 Now you can use it with `--tasks gaokaomcq`.
-
-# Language Model Evaluation Harness
-
-![](https://github.com/EleutherAI/lm-evaluation-harness/workflows/Build/badge.svg)
-[![codecov](https://codecov.io/gh/EleutherAI/lm-evaluation-harness/branch/master/graph/badge.svg?token=JSG3O2427J)](https://codecov.io/gh/EleutherAI/lm-evaluation-harness)
 
 ## Overview
 
